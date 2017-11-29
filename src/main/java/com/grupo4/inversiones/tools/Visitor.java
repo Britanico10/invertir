@@ -2,7 +2,9 @@ package com.grupo4.inversiones.tools;
 
 import java.util.List;
 
-import com.grupo4.FormulasBaseVisitor;
+import org.antlr.v4.runtime.tree.ParseTree;
+
+import com.grupo4.FormulasBaseListener;
 import com.grupo4.FormulasParser;
 import com.grupo4.FormulasParser.CuentaContext;
 import com.grupo4.FormulasParser.DoubleContext;
@@ -17,7 +19,7 @@ import com.grupo4.inversiones.entidades.Empresa;
 import com.grupo4.inversiones.entidades.Indicador;
 import com.grupo4.inversiones.repositorio.Repositorio;
 
-public class Visitor extends FormulasBaseVisitor<Double> {
+public class Visitor extends FormulasBaseListener {
 	
 	private Empresa empresa;
 	private int periodo;
@@ -29,14 +31,12 @@ public class Visitor extends FormulasBaseVisitor<Double> {
 		this.periodo = periodo;
 	}
 	
-	@Override
 	public Double visitPrintExpr(PrintExprContext ctx){
 		Double value = visit(ctx.expresion());
 		//System.out.println(value);
 		return value;
 	}
 	
-	@Override
 	public Double visitMuldiv(MuldivContext ctx){
 		Double left = visit(ctx.expresion(0));
 		Double right = visit(ctx.expresion(1));
@@ -48,7 +48,6 @@ public class Visitor extends FormulasBaseVisitor<Double> {
 		}
 	}
 	
-	@Override
 	public Double visitSumres(SumresContext ctx){
 		Double left = visit(ctx.expresion(0));
 		Double right = visit(ctx.expresion(1));
@@ -59,12 +58,10 @@ public class Visitor extends FormulasBaseVisitor<Double> {
 		}
 	}
 	
-	@Override
 	public Double visitDouble(DoubleContext ctx){
 		return Double.parseDouble(ctx.NUMERO().getText());
 	}
 	
-	@Override
 	public Double visitIndi(IndiContext ctx){
 		repositorio = new Repositorio(App.EM_FACTORY.createEntityManager());
 		Indicador indicador = repositorio.indicadores().buscarPorNombre(ctx.getText());
@@ -73,7 +70,6 @@ public class Visitor extends FormulasBaseVisitor<Double> {
 		return indicador.aplicarA(empresa, periodo);
 	}
 	
-	@Override
 	public Double visitCuenta(CuentaContext ctx){
 		Balance balance;
 		List<Balance> balancesActuales = empresa.getBalances();
@@ -96,9 +92,13 @@ public class Visitor extends FormulasBaseVisitor<Double> {
 			}
 	}
 	
-	@Override
 	public Double visitParen(ParenContext ctx){		
 		return visit(ctx.expresion());
+	}
+
+	public Double visit(ParseTree tree) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

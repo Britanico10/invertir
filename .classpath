@@ -14,5 +14,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/Martin/Documents/UTN/3er Anyo/DDS/download/slf4j-1.7.25/slf4j-1.7.25/slf4j-simple-1.7.25.jar"/>
+	<classpathentry kind="src" path="/formulas"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
