@@ -93,13 +93,7 @@
       <version>4.8.2</version>
       <scope>test</scope>
     </dependency>
-    
-    <dependency>    
-      <groupId>com.grupo4</groupId>
-	  <artifactId>formulas</artifactId>
- 	  <version>0.0.1-SNAPSHOT</version>
-	</dependency>
-	
+    	
 	<dependency>
    		<groupId>com.googlecode.json-simple</groupId>
     	<artifactId>json-simple</artifactId>
