@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Metodologias</title>
+		<meta name"viewport" content="width=device-width, user-scalable=no, initial-scale = 1.0, maximun scale=1.0, minimun scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/estilosIndicadores.css">
+	</head>
+	<body onload="cargarCondicionesFiltro()">
+		<header class="container">
+			<div id="headCondicionesFiltro">
+				<h1> Condiciones de Filtro </h1>
+			</div>
+			<div class="row">
+				<div class="nav col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<ul class="menu">
+						<li><a href="index.html" title="Inicio" >Inicio</a></li>
+						<li><a href="Indicadores.html" title="Indicadores">Indicadores</a></li>
+						<li><a href="Metodologias.html" title="Metodologias">Metodologias</a></li>
+						<li><a href="CondicionesOrden.html" title="CondicionesOrden">Condiciones de Orden</a></li>
+						<li><a href="CondicionesFiltro.html" title="CondicionesFiltro">Condiciones de Filtro</a></li>
+						<br>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section class="wrapper container">
+			<section class="main row">
+			    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="MI"> 
+				    <h2> Lista de Condiciones de Orden </h2>
+                    <div class="table-responsive">          
+				    <table id="CondFiltro" class="table table-hover" > 
+					    <thead>
+						    <tr>
+							    <th> Nombre </th>
+							    <th> Tipo </th>
+							    <th> Detalle </th>
+							    <th> Eliminar </th> 
+						    </tr> 
+					    </thead> 
+					    <tbody> 
+					    </tbody>
+					    <tfoot> 
+					    		
+					    </tfoot> 
+				    </table>
+				    <hr> 
+				       	<input type="text" placeholder="Nombre"/ id="nombre"> 
+					    <input type="text" placeholder="Tipo"/ id="tipo"> 
+						<input type="text" placeholder="Inicio Intervalo" id="iActividad"/> 
+						<input type="text" placeholder="Fin Intervalo"/ id="fActividad"> 
+						<button class="btn btn-success" onclick="agregarCondicionFiltro()"> Agregar </button> 
+					<hr>
+						<input type="text" placeholder="Comparador" id="comparador"/> 
+						<input type="text" placeholder="Periodo"/ id="periodo"> 
+						<input type="text" placeholder="Nombre Indicador" id="nIndicador"/> 
+						 
+					<hr>
+				    </table>
+				    </div>
+				</div>
+            </section>   
+		</section>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/metodologias.js"></script>
+	</body>

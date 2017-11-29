@@ -1,0 +1,29 @@
+[
+  {
+    "nombreCondicion": "Consistencia Creciente",
+    "comparador": 0,
+    "tipo": "ConsistenciaCreciente",
+    "periodo": 0,
+    "inicioIntervalo": 2007,
+    "nombreIndicador": "ROE",
+    "finalIntervalo": 2016
+  },
+  {
+    "nombreCondicion": "Margenes crecientes",
+    "comparador": 0,
+    "tipo": "ConsistenciaCreciente",
+    "periodo": 0,
+    "inicioIntervalo": 2007,
+    "nombreIndicador": "Margen",
+    "finalIntervalo": 2016
+  },
+  {
+    "nombreCondicion": "Longevidad",
+    "comparador": 10,
+    "tipo": "FiltroMayor",
+    "periodo": 2014,
+    "inicioIntervalo": 0,
+    "nombreIndicador": "Longevidad",
+    "finalIntervalo": 0
+  }
+]

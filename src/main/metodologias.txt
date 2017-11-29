@@ -1,0 +1,22 @@
+[
+  {
+    "condicionesOrden": [
+      "Maximizar ROE",
+      "Minimizar proporcion de deuda",
+      "Longevidad"
+    ],
+    "condicionesFiltro": [
+      "Consistencia Creciente",
+      "Margenes crecientes",
+      "Longevidad"
+    ],
+    "nombre": "Warren Buffett"
+  },
+  {
+    "condicionesOrden": [
+      "Maximizar ROE"
+    ],
+    "condicionesFiltro": [],
+    "nombre": "prueba"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "nombreCondicion": "Maximizar ROE",
+    "importancia": 1,
+    "tipo": "Maximizar",
+    "periodo": 0,
+    "inicioIntervalo": 2007,
+    "nombreIndicador": "ROE",
+    "finalIntervalo": 2016
+  },
+  {
+    "nombreCondicion": "Minimizar proporcion de deuda",
+    "importancia": 1,
+    "tipo": "Minimizar",
+    "periodo": 0,
+    "inicioIntervalo": 2007,
+    "nombreIndicador": "proporcionDeuda",
+    "finalIntervalo": 2016
+  },
+  {
+    "nombreCondicion": "Longevidad",
+    "importancia": 1,
+    "tipo": "OrdenMayor",
+    "periodo": 2007,
+    "inicioIntervalo": 0,
+    "nombreIndicador": "Longevidad",
+    "finalIntervalo": 0
+  }
+]

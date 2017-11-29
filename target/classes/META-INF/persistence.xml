@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+    http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" 
+    version="2.0"> 
+  
+    <persistence-unit name="c3wcdm1ifws0l1ji" transaction-type="RESOURCE_LOCAL">
+    	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+       
+    	<class>com.grupo4.inversiones.entidades.Indicador</class>
+     	<class>com.grupo4.inversiones.entidades.Balance</class>
+    	<class>com.grupo4.inversiones.entidades.Empresa</class>
+    	<class>com.grupo4.inversiones.entidades.Metodologia</class>
+    	
+    	<class>com.grupo4.inversiones.entidades.condiciones.Condicion</class>
+    	<class>com.grupo4.inversiones.entidades.condiciones.CondicionFiltro</class>
+    	<class>com.grupo4.inversiones.entidades.condiciones.CondicionOrden</class>
+    	<class>com.grupo4.inversiones.entidades.condiciones.FiltroMayor</class>
+    	<class>com.grupo4.inversiones.entidades.condiciones.FiltroMenor</class>
+    	<class>com.grupo4.inversiones.entidades.condiciones.OrdenMayor</class>
+    	<class>com.grupo4.inversiones.entidades.condiciones.OrdenMenor</class>
+    	<class>com.grupo4.inversiones.entidades.condiciones.Maximizar</class>
+    	<class>com.grupo4.inversiones.entidades.condiciones.Minimizar</class>
+    	<class>com.grupo4.inversiones.entidades.condiciones.ConsistenciaCreciente</class>
+    	<class>com.grupo4.inversiones.entidades.condiciones.ConsistenciaDecreciente</class>
+    	
+    	<class>com.grupo4.inversiones.Usuario</class>
+    	<class>com.grupo4.inversiones.persistencia.Persistible</class>
+    	
+    	 
+        <properties> 
+	    	<property name="hibernate.archive.autodetection" value="class"/>        
+        
+            <!--property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" /> 
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/prueba" /> 
+            <property name="hibernate.connection.username" value="root" /> 
+            <property name="hibernate.connection.password" value="mysql" /--> 
+
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" /> 
+            <property name="hibernate.connection.url" value="jdbc:mysql://52.23.7.107:3306/c3wcdm1ifws0l1ji" /> 
+            <property name="hibernate.connection.username" value="gxc30r1195ch2man" />
+            <property name="hibernate.connection.password" value="l5jefq8pu9oxotvm" /> 
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />           
+                            
+            <property name="hibernate.show_sql" value="true" /> 
+            <property name="hibernate.format_sql" value="true" /> 
+            <property name="use_sql_comments" value="true" />
+            <!-- 
+            validate: validate the schema, makes no changes to the database.
+			update: update the schema.
+			create: creates the schema, destroying previous data.
+			create-drop: drop the schema at the end of the session. 
+			-->
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <!--<property name="hibernate.hbm2ddl.auto" value="create" /> -->
+        </properties>
+          
+    </persistence-unit> 
+  
+</persistence> 

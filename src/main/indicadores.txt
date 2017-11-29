@@ -1,0 +1,22 @@
+[
+  {
+    "formula": "ingNetoOpCont + ingNetoOpDiscont",
+    "idIndicador": "ingresoNeto"
+  },
+  {
+    "formula": "ingresoNeto / capitalPropio",
+    "idIndicador": "ROE"
+  },
+  {
+    "formula": "deuda/capitalPropio",
+    "idIndicador": "proporcionDeuda"
+  },
+  {
+    "formula": "ingresoNeto",
+    "idIndicador": "Margen"
+  },
+  {
+    "formula": "2017-inicioActividad",
+    "idIndicador": "Longevidad"
+  }
+]

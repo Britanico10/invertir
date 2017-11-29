@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Indicadores</title>
+		<meta name"viewport" content="width=device-width, user-scalable=no, initial-scale = 1.0, maximun scale=1.0, minimun scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/estilosIndicadores.css">
+	</head>
+	<body onload="cargarIndicadores()">
+		<header class="container">
+			<div id="headindicadores">
+				<h1> Indicadores </h1>
+			</div>
+			<div class="row">
+				<div class="nav col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<ul class="menu">
+						<li><a href="index.html" title="Inicio" >Inicio</a></li>
+						<li><a href="Indicadores.html" title="Indicadores">Indicadores</a></li>
+						<li><a href="Metodologias.html" title="Metodologias">Metodologias</a></li>
+						<br>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section class="wrapper container">
+			<section class="main row">
+			    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="MI"> 
+				    <h2> Lista de Indicadores </h2>
+                    <div class="table-responsive">          
+				    <table id="Indicadores" class="table table-hover" > 
+					    <thead>
+						    <tr>
+							    <th> Nombre </th>
+							    <th> Formula </th> 
+							    <th>  </th> 
+							    <th>  </th> 
+						    </tr> 
+					    </thead> 
+					    <tbody> 
+					    </tbody>
+					    <tfoot> 
+						    <tr> 
+							    <th>
+								    <input type="text" name="nombre[]" class="nombre" placeholder="Nombre" width="100%" id="nombre"></input>
+							    </th>
+							    <th>
+								    <input type="text" name="formula[]" class="formula" placeholder="Formula" width="100%" id="formula"></input>
+							    </th> 
+							    <th></th>
+							    <th> 	
+								    <button type="button" class="btn btn-success " onclick=" agregarIndicador()"> Agregar </button> 
+							    </th> 
+						    </tr>
+						        
+						    <tr>
+						    </tr>
+					    </tfoot> 
+				    </table> 
+				    </div>
+				</div>
+            </section>   
+		</section>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/indicadores.js"></script>
+	</body>
+</html>
